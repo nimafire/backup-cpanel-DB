@@ -6,7 +6,14 @@ i've removed "for" and "if" because they don't matter.
 
 "simple script for system administrator"
 
-How use:
+<b>How use:</b><br>
 just change this value to yours:
 BACKUPDIR=backup/db_backup
+
+
+<b>How add cron for this script</b><br>
+its simple as the script.
+just add this line into your cron system like this:
+
+30 */12 * * * /etc/backupDB.sh > /dev/null 2>&1
 
